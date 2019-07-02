@@ -2,7 +2,7 @@
 .container{
     display: flex;
     flex-direction:column;
-
+     font-family: Arial Narrow,Arial,sans-serif;
   color:#0055A4;
   margin:40px;
 
@@ -368,7 +368,7 @@ li {
 
 img{
   pointer-events: none;
- padding-right: 15px;
+
 }
 footer{
   display: flex;
