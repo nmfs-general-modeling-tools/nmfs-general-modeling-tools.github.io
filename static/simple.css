@@ -3,7 +3,7 @@
     display: flex;
     flex-direction:column;
 
-  color:#3F51B5;
+  color:#0055A4;
   margin:40px;
 
 }
@@ -26,8 +26,8 @@
   min-width: 200px;
   margin-right:auto;
 
-    color: #3F51B5;
-    font-family: 'Serif';
+    color: #0055A4;
+    font-family: Cambria,Georgia,serif;
     font-size: 36px;
     text-align: left;
     padding: 5px;
@@ -62,7 +62,7 @@ font-style: normal;
 text-decoration: none;
 text-align: center;
 background: #FFFFFF;
-border: 3px dotted #3F51B5;
+border: 3px dotted #0055A4;
 border-radius: 21px;
 margin-right: 10px;
 
@@ -71,7 +71,7 @@ margin-right: 10px;
 
 width: 100%;
 height: 8px;
-background-color:#3F51B5;
+background-color:#0055A4;
 border: 0 none;
 margin-top: 20px;
 margin-bottom:20px;
@@ -82,7 +82,7 @@ margin-bottom:20px;
 
 width: auto;
 height: 25px;
-color: #3F51B5;
+color: #0055A4;
 font-family: 'Source Sans Pro';
 font-size: 16px;
 font-weight: bold;
@@ -95,7 +95,7 @@ cursor:pointer;
 background-size:contain;
 background-repeat:no-repeat;
 display:inline-block;
-border:1px solid #3F51B5;
+border:1px solid #0055A4;
 border-bottom: 3px solid white;
 margin: 0 0 -3px;
 }
@@ -103,7 +103,7 @@ margin: 0 0 -3px;
 .pdfIcon{
 width: 68px;
 height: 45px;
-color: #3F51B5;
+color: #0055A4;
 font-size: 24px;
 font-weight: normal;
 background: rgba(255,255,255,0.4);
@@ -167,13 +167,14 @@ h2{
 
 }
 .longTitle{
+  font-family: Cambria,Georgia,serif;
   font-style: italic;
   text-align: center;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 5px;
   padding-left: 5px;
-  color: #3F51B5;
+  color: #0055A4;
 }
 
 
@@ -262,7 +263,6 @@ button.icon_small[disabled]{
 width: 97px;
 height: 45px;
 color: #FFFFFF;
-font-family: 'Source Sans Pro';
 font-size: 12px;
 font-weight: bold;
 font-style: normal;
@@ -280,7 +280,6 @@ margin-left: auto;
     width: 240px;
 height: 40px;
 color: #000000;
-font-family: 'Source Sans Pro';
 font-size: 12px;
 font-weight: normal;
 font-style: normal;
@@ -298,18 +297,17 @@ text-align: left;
 width: auto;
 height: auto;
 color: #000000;
-font-family: 'Source Sans Pro';
 font-size: 16px;
 text-align: left;
 padding: 20px 40px 20px 40px;
 border-style: dashed;
-border-color:  #3F51B5 ;
+border-color:  #0055A4 ;
 border-width: 0 0 2px 0;
 
 }
 
 .filtering{
-      /*background-color: #3F51B5;*/
+      /*background-color: #0055A4;*/
       width: auto;
       height: 200px;
       margin-top: 20px;
@@ -319,8 +317,7 @@ border-width: 0 0 2px 0;
 
 width: 441px;
 height: 40px;
-color: #3F51B5;
-font-family: 'Source Sans Pro';
+color: #0055A4;
 font-size: 14px;
 font-weight: normal;
 font-style: normal;
@@ -334,7 +331,6 @@ text-align: left;
 width: 33px;
 height: 30px;
 color: #FFFFFF;
-font-family: 'Source Sans Pro';
 font-size: 14px;
 font-weight: normal;
 font-style: normal;
@@ -372,26 +368,37 @@ li {
 
 img{
   pointer-events: none;
-
+ padding-right: 15px;
 }
 footer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 12px;
   color:black;
+  padding-left:60px;
+   padding-right:260px;
+   font-family: Cambria,Georgia,serif;
 
 }
-.mylink{padding: 5px;}
+#line{
+  border-right:1px solid black;
+}
+
+.mylink{padding: 5px;
+font-size: 14px;}
+
 .mylink:any-link {
   color:black;
+  height: fit-content;
 }
 
 
 /* WebKit browsers */
 .mylink:-webkit-any-link {
   color:black;
+  height: fit-content;
 }
 
-/* selected link */
+
 
 
