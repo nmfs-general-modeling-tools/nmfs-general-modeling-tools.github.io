@@ -21,6 +21,12 @@
   justify-content: stretch;
 
 }
+.mywrap_center{
+  display: flex;
+  flex-direction:row;
+  margin:auto;
+  padding-left: 15px;
+}
 
 .title {
   min-width: 200px;
