@@ -282,6 +282,13 @@ button.icon_small[disabled]{
   background-size: cover;
 }
 
+#email{
+    background-image: url("icons8-email-send-24.png");
+  background-repeat: none;
+  background-size: cover;
+  border:none;
+
+}
 
 .versionButton{
 
