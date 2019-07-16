@@ -422,6 +422,24 @@ font-size: 14px;}
   height: fit-content;
 }
 
+.fit_link{padding: 5px;
+font-size: 14px;
+text-decoration: none;}
+
+.fit_link:any-link {
+  color:#0093D0;
+  height: fit-content;
+  text-decoration: none;
+}
+
+
+/* WebKit browsers */
+.fit_link:-webkit-any-link {
+  color:#0093D0;
+  height: fit-content;
+  text-decoration: none;
+}
+
 #line{
   border-right:1px solid black;
 }
