@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+  <!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146635872-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config',"UA-146635872-3" );
+  </script>
+    <title>NMFS General Modeling Tools</title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
 
@@ -42,14 +54,14 @@
             </div>
             <div class = "box2">
               <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
-                  Tools and code go through a validation process and are assigned different levels of validation.
+                  Tools and code go through a validation process and areassigned different levels of validation.
 
 
 
             </div>
             <div class = "box2">
               <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
-                  Tools are supported by NOAA support staff at differing levels depending on the owner of the repository and tools validation level
+                  Tools are supported by NOAA support staff at differeing levels depending on the owner of the repository and tools validation level
 
 
             </div>
@@ -58,7 +70,10 @@
 
 
             </div>
-        <!-- <div class ="filtering"></div> -->
+        <div class ="boxcontainer">
+
+          <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
+        </div>
         <div class ="boxcontainer">
 
 
