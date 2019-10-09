@@ -27,7 +27,7 @@
         </div>
         <div class = "divider"></div>
         <div class ="infoText">
-          This is a collection of interdisciplinary data analysis and modeling tools; part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrated Toolbox (FIT)</a>.
+          This is a collection of interdisciplinary data analysis and modeling tools which; part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrated Toolbox (FIT)</a>.
         </div>
         <div class="boxcontainer">
             <div class = "box2">
@@ -85,6 +85,8 @@
               <div class = "longTitle">AD Model Builder</div>
               <div class = "modelType">Model Builder</div>
               <div class = "modelType"></div>
+
+
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -125,6 +127,8 @@
               <div class = "longTitle">Analytics Template Library</div>
               <div class = "modelType">Model Builder</div>
               <div class = "modelType"></div>
+
+
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -165,6 +169,11 @@
               <div class = "longTitle">Vector Autoregressive Spatio-Temporal Model</div>
               <div class = "modelType"></div>
               <div class = "modelType"></div>
+
+
+              <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/James-Thorson-NOAA/VAST?color=%230093D0></div>
+
+
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -205,6 +214,11 @@
               <div class = "longTitle">FishSET-Map-Viewer</div>
               <div class = "modelType">Analysis</div>
               <div class = "modelType"></div>
+
+
+              <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-general-modeling-tools/FishSET-Map-Viewer?color=%230093D0&include_prereleases></div>
+
+
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -258,5 +272,23 @@
         </footer>
         <div class ="attribution">Icons by icons8 https://icons8.com/</div>
       </div>
+      <script>
+        function simpleSearch() {
+            var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            box = document.getElementsByClassName("box");
+            for (i = 0; i < box.length; i++) {
+                box_each = box[i].getElementsByClassName("longTitle")[0];
+                box_each_abbrev = box[i].getElementsByClassName("shortTitle")[0];
+                txtValue = box_each.textContent + " " + box_each_abbrev.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    box[i].style.display = "";
+                } else {
+                    box[i].style.display = "none";
+                }
+            }
+        }
+      </script>
    </body>
 </html>
