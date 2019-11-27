@@ -29,14 +29,44 @@
         <div class ="infoText">
           This is a collection of interdisciplinary data analysis and modeling tools which; part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrated Toolbox (FIT)</a>.
         </div>
-        <div class="boxcontainer">
-            <div class = "box2">
+
+        <div class="mywrap">
+          <div class="mywrap">
+          <div class ="sidenav">
+
+           <!--  <div class="tabs">
+              <div class="tab">
+                <input type="checkbox" id="chck1">
+                <label class="tab-label" for="chck1">Stock Assesment Models</label>
+                <div class="tab-content">
+                 <input type="button" value="Age structured" onclick="simpleSearch(this.value)">
+                 <input type="button" value="Length structured" onclick="simpleSearch(this.value)">
+                 <input type="button" value="Age length structured" onclick="simpleSearch(this.value)">
+                </div>
+              </div>
+              <div class="tab">
+              <input type="button" value="Advanced estimation engine" onclick="simpleSearch(this.value)">
+            </div>
+              <div class="tab">
+              <input type="button" value="Data simulator" onclick="simpleSearch(this.value)">
+            </div>
+              <div class="tab">
+              <input type="button" value="Input Processor" onclick="simpleSearch(this.value)">
+            </div>
+            </div> -->
+
+
+          <div class = "box2">
+            <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
+          </div>
+
+          <div class = "box2">
               <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
                 Some tools are available as web based applications.
 
 
 
-              </div>
+            </div>
             <div class = "box2">
               <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
 
@@ -67,13 +97,17 @@
             </div>
 
 
+          </div>
+          <div class="side_container" onclick="menuClick(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
 
 
-            </div>
-        <div class ="boxcontainer">
+          </div>
 
-          <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
-        </div>
+
+
         <div class ="boxcontainer">
 
 
@@ -216,7 +250,7 @@
               <div class = "modelType"></div>
 
 
-              <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-general-modeling-tools/FishSET-Map-Viewer?color=%230093D0&include_prereleases></div>
+              <div class = "release"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/nmfs-general-modeling-tools/FishSET-Map-Viewer?color=%230093D0&include_prereleases"></div>
 
 
               <div class = "language"></div>
@@ -251,9 +285,11 @@
 
           </div>
 
+        </div>
 
 
         </div>
+      </div>
 
 
 
@@ -273,10 +309,21 @@
         <div class ="attribution">Icons by icons8 https://icons8.com/</div>
       </div>
       <script>
-        function simpleSearch() {
+        var sidenav = document.getElementsByClassName("sidenav");
+            // sidenav[0].style.display="none";
+
+        function simpleSearch(val) {
+          console.log(val)
             var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
+            if(val === undefined){
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+            }
+            else {
+              filter = val.toUpperCase();
+            }
+
+
             box = document.getElementsByClassName("box");
             for (i = 0; i < box.length; i++) {
                 box_each = box[i].getElementsByClassName("longTitle")[0];
@@ -289,6 +336,18 @@
                 }
             }
         }
+
+        function menuClick(x) {
+          x.classList.toggle("change");
+
+          sidenav[0].classList.toggle("open");
+          // boxcontainer
+
+
+
+        }
+
+
       </script>
    </body>
 </html>
