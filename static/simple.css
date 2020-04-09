@@ -1,9 +1,31 @@
-.side_container {
+.menu-toggle {
   display: inline-block;
   cursor: pointer;
   position: absolute;
   z-index: 1;
+  border:none;
+  background-color:transparent;
+  width: 35px;
+  height: 35px;
 
+}
+
+.menulabel{
+
+  border:none;
+  background-color:transparent;
+  width: 35px;
+  height: 35px;
+    position: absolute;
+
+}
+
+#menu{
+  margin-top: 50px;
+  display: none;
+}
+#menu.is_active{
+  display: inline-block;
 }
 
 .bar1, .bar2, .bar3 {
@@ -13,10 +35,11 @@
   background-color: #0055A4;
   margin: 6px 0;
   transition: 0.6s;
+
 }
 
 /* Rotate first bar */
-.change .bar1 {
+.menulabel.change .bar1 {
   -webkit-transform: rotate(90deg) translate(14px, 16px) ;
   transform: rotate(90deg) translate(14px, 16px) ;
   background-color:white;
@@ -54,10 +77,10 @@
 
 .sidenav.open{
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 5px;
   min-width: 210px;
   overflow:auto;
-
+  z-index: 0;
 
 }
 
@@ -384,9 +407,15 @@ background-color: #0055A4;
 .icon_small{
   width:  25px;
   height: 25px;
-  background-color: white;
   margin:0 auto 0 auto;
-  border: 1px solid black
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.row .icon_small{
+  margin:0 10px 0 0;
 }
 
 button:disabled,
@@ -407,50 +436,39 @@ button.icon_small[disabled]{
 }
 
 
-
-#online{
+.online{
   background-image: url("icons8-tune-24.png");
-  background-repeat: none;
-  background-size: cover;
 }
 
-#github{
+.github{
   background-image: url("icons8-code-fork-24.png");
-  background-repeat: none;
-  background-size: cover;
 }
 
-#down{
+.down{
   background-image: url("icons8-lightning-bolt-filled-50.png");
-  background-repeat: none;
-  background-size: cover;
 }
 
 
 
-#cert{
+.cert{
   background-image: url("icons8-approval-filled-50.png");
-  background-repeat: none;
-  background-size: cover;
 }
 
-#checkmark{
+.checkmark{
   background-image: url("icons8-checkmark-24.png");
-  background-repeat: none;
-  background-size: cover;
 }
 
-#internal_inactive{
+.internal_inactive{
   background-image: url("icons8-checkmark-24-internal-inactive.png");
   background-repeat: none;
   background-size: cover;
 }
-#internal_active{
+.internal_active{
   background-image: url("icons8-checkmark-24-internal-active.png");
   background-repeat: none;
   background-size: cover;
 }
-#external_active{
+.external_active{
   background-image: url("icons8-checkmark-24-external-active.png");
   background-repeat: none;
   background-size: cover;
@@ -620,7 +638,7 @@ text-decoration: none;}
   text-decoration: none;
 }
 
-#line{
+.line{
   border-right:1px solid black;
 }
 
@@ -640,3 +658,5 @@ footer{
     font-size: 10px;
     color:grey;
 }
+
+
