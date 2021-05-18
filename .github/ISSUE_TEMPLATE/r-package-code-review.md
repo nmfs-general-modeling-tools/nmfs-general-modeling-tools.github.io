@@ -29,8 +29,8 @@ dstr()
 getNamespaceExports(mmrefpoints)
 ````
 - [ ] works
-- [ ] issues uncovered- [ ] works
 - [ ] issues uncovered
+
 4. `devtools::run_examples()`
 - [ ] works
 - [ ] issues uncovered
