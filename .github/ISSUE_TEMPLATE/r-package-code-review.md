@@ -13,6 +13,8 @@ assignees: ''
 - [ ] issues uncovered
 
 2. Run `devtools::check()`
+- [ ] works
+- [ ] issues uncovered
 
 3. Check dependencies
 ```
@@ -20,10 +22,15 @@ install_github("falo0/dstr")
 library(dstr)
 dstr()
 ```
-
+- [ ] works
+- [ ] issues uncovered
 4. Check exports
 ```
 getNamespaceExports(mmrefpoints)
 ````
-
+- [ ] works
+- [ ] issues uncovered- [ ] works
+- [ ] issues uncovered
 4. `devtools::run_examples()`
+- [ ] works
+- [ ] issues uncovered
