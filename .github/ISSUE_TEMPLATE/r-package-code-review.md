@@ -66,6 +66,12 @@ getNamespaceExports()
 > rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the
 > Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United
 > States.”
+
+To include this plus another license in the package in a way that satisfies CRAN, you must include the above text in a `LICENSE` file and in your `DESCRIPTION` include a line:
+```
+License: License: GPL-2 | file LICENSE
+```
+where GPL-2 can be replaced with your license of choice. [More information on licensing](https://r-pkgs.org/license.html)
 - [ ] works
 - [ ] issues uncovered
 
