@@ -86,7 +86,7 @@ style_pkg(
 
 To include this plus another license in the package in a way that satisfies CRAN, you must include the above text in a `LICENSE` file and in your `DESCRIPTION` include a line:
 ```
-License: License: GPL-2 | file LICENSE
+License: GPL-2 | file LICENSE
 ```
 where GPL-2 can be replaced with your license of choice. [More information on licensing](https://r-pkgs.org/license.html)
 - [ ] works
